@@ -1,0 +1,4 @@
+3
+A,O,K,C,Q,E,H,N,G,S,L,M,Y,D,R,B,I,V,Z,P,X,J,F,W,T,U,
+E,G,B,H,L,T,D,I,Z,O,A,R,V,C,F,W,M,S,Q,U,P,K,X,N,Y,J,
+H,J,B,X,K,Q,R,Z,P,M,D,I,N,O,A,W,E,L,T,S,Y,C,V,U,G,F,

@@ -1,0 +1,11 @@
+10
+U,B,Y,E,R,G,H,N,J,T,O,A,F,X,I,M,Z,C,W,S,P,D,Q,K,V,L,
+W,B,Q,D,T,M,S,Y,I,R,C,K,G,U,N,H,P,F,E,O,L,J,A,Z,V,X,
+A,N,S,F,G,L,V,K,Y,W,Q,C,R,E,P,H,Z,O,X,I,B,D,J,M,U,T,
+L,H,N,B,P,K,M,F,E,Z,V,X,S,Y,R,I,J,C,U,W,G,T,O,D,Q,A,
+Z,Q,G,V,B,A,H,P,C,O,T,S,X,I,K,N,L,R,Y,D,W,J,U,F,M,E,
+E,F,G,Z,J,B,H,Q,W,P,V,A,R,N,K,T,C,S,U,I,L,O,X,Y,M,D,
+M,U,E,I,Z,S,Q,Y,O,G,B,K,N,D,X,F,T,C,R,J,H,W,P,V,A,L,
+U,Z,T,X,A,V,F,H,P,R,Y,J,Q,B,O,S,C,G,D,M,W,E,N,K,I,L,
+D,F,Z,I,N,A,X,Q,J,L,M,S,R,U,O,Y,G,V,B,K,C,P,E,W,T,H,
+V,U,D,A,F,R,B,Q,E,J,P,Y,O,C,Z,S,G,W,M,N,K,I,L,H,T,X,

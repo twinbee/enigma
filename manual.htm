@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//ABISOURCE//DTD XHTML plus AWML 2.2//EN" "http://www.abisource.com/2004/xhtml-awml/xhtml-awml.mod">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:awml="http://www.abisource.com/2004/xhtml-awml/">
+ <head>
+  <!-- ======================================================= -->
+  <!-- Created by AbiWord, a free, Open Source wordprocessor.  -->
+  <!-- For more information visit http://www.abisource.com.    -->
+  <!-- ======================================================= -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>manual.htm</title>
+  <style type="text/css">
+   <!--
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}@media print, projection, embossed {
+	body {
+		padding-top:0.5000in;
+		padding-bottom:0.5000in;
+		padding-left:0.5000in;
+		padding-right:0.5000in;
+	}
+}
+body {
+	font-family:'Times New Roman';
+	font-style:normal;
+	widows:2;
+	text-align:left;
+	text-indent:0in;
+	text-decoration:none;
+	font-size:12pt;
+	color:#000000;
+	font-variant:normal;
+	font-weight:normal;
+}
+table {
+}
+td {
+	border-collapse:collapse;
+	text-align:left;
+	vertical-align:top;
+}
+p, h1, h2, h3, li {
+	color:#000000;
+	font-family:'Times New Roman';
+	font-size:12pt;
+	text-align:left;
+	vertical-align:normal;
+}
+     -->
+  </style>
+ </head>
+ <body>
+  <div>
+   <p><span style="font-weight:bold;font-size:14pt" xml:lang="en-US" lang="en-US">Visual, Digital Enigma</span></p>
+   <p><span style="font-size:14pt" xml:lang="en-US" lang="en-US">Mike Johnson and Matthew Bennett</span></p>
+   <p><span style="font-size:14pt" xml:lang="en-US" lang="en-US">CSC 592 / Special Topics: Cryptography</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">This project presents an object oriented implementation of the enigma cryptographic device used by the Axis powers in World War Two. Additionally, a windows-only visual representation of the machine's state is provided. The enigma class may be used with or without the 3d graphics visual component.</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">The class is designed to be used as a "black box". No information is provided in the interface about the internal workings of the machine. </span></p>
+   <p></p>
+   <p><span style="font-weight:bold;font-size:10pt" xml:lang="en-US" lang="en-US">HISTORY</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">The enigma is a mechanical device consisting of a keyboard, a series of cypher disks, a special disk known as a reflector, a printer, and a plugboard. The disks each represent a full non-idempotent permutation of the alphabet. Each disks performs a permutation cypher, and the entire machine represents a multi-stage permutation cypher. The stream is entered one character at a time via the keypad. The initial state of the machine is determined by a secret key the same length as the number of disks. &nbsp;Each disk begins rotated into place of that character. After a character is encoded, the disks advance in some deterministic fashion so that the permutation cypher of the machine changes. </span></p>
+   <p></p>
+   <p><span style="font-weight:bold;font-size:10pt" xml:lang="en-US" lang="en-US">USAGE</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">Be sure to include the header file. </span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">#include "enigma.h"</span></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">//place the header files in your include directory</span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">enigma MyEnigma("rotor_file_name.txt");</span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">MyEnigma.setkey("drowssap");</span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">char [10] cyphertext = MyEnigma.encode("Secret Message");</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">The result can be checked by creating another machine with identical state and passing the ciphertext in. This is because the enigma cypher is symmetric. </span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">enigma YourEnigma("rotor_file_name.txt");</span></p>
+   <p dir="ltr" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in"></p>
+   <p dir="ltr" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in"><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">YourEnigma.setkey("drowssap");</span></p>
+   <p dir="ltr" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in"></p>
+   <p dir="ltr" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in"><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">char [10] plaintext = YourEnigma.encode(cyphertext);</span></p>
+   <p dir="ltr" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in"></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">The plugboard is provided as part of the enigma reference implementation. This swaps any set of letter-pairs as the characters enter and exit the machine. Once a plug is completed, pairing either of them with another letter has no effect.</span></p>
+   <p></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">MyEnigma.plug('A','E');</span></p>
+   <p><span style="font-size:10pt;font-family:'Courier New'" xml:lang="en-US" lang="en-US">MyEnigma.unplug('A','E');</span></p>
+   <p></p>
+   <p><span style="font-weight:bold;font-size:10pt" xml:lang="en-US" lang="en-US">ROTOR FILE</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">A rotor file is a text file consisting of the following: Line 1 is an integer representing the number of disks (N), followed by N lines of &nbsp;permutations of the Roman alphabet, as comma separated capital letters. A program is provided to produce such a file. It can be found in rotorgen.cpp or as a windows console executable rotors.exe.</span></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p><img style="width:171.4mm" alt="" src="manual.htm_files/21177c80-fd3b-11db-931b-ff870ff8d999.png" /></p>
+   <p></p>
+   <p></p>
+   <p><span style="font-weight:bold;font-size:10pt" xml:lang="en-US" lang="en-US">VISUALIZATION</span></p>
+   <p></p>
+   <p><span style="font-size:10pt" xml:lang="en-US" lang="en-US">An OpenGL / SDL graphical front end is provided, implemented in main.cpp. This compiles in windows under Dev-C++ 4.9.9.2, but may be easily ported to other environments such as linux. A windows executable is provided as-is (enigma.exe). The primary function of this is a proof of concept and could be used as an educational tool.</span></p>
+  </div>
+ </body>
+</html>
