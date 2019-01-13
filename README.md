@@ -4,7 +4,7 @@ A simulation of enigma machine rotors in OpenGL
 ![](https://github.com/twinbee/enigma/blob/master/manual.htm_files/21177c80-fd3b-11db-931b-ff870ff8d999.png?raw=true)
 
     Visual, Digital Enigma
-    Matthew Bennett
+    Matthew Bennett 2005
     CSC 592 / Special Topics: Cryptography
 
 This project presents an object oriented implementation of the enigma cryptographic device used by the Axis powers in World War Two. Additionally, a windows-only visual representation of the machine's state is provided. The enigma class may be used with or without the 3d graphics visual component.
